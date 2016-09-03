@@ -1,3 +1,4 @@
+import nodes.Node;
 import org.junit.Test;
 
 /**

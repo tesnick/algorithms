@@ -1,3 +1,5 @@
+import nodes.GraphNode;
+
 /**
  * Created by tesnick on 31/08/16.
  */
@@ -8,10 +10,10 @@ public class DepthFirstSearch {
         if (root == null) return;
 
         visit(root);
-        root.visited = true;
+        root.setVisited(true);
 
-        for (GraphNode n : root.adjacent) {
-            if (n.visited == false) {
+        for (GraphNode n : root.getAdjacent()) {
+            if (n.isVisited() == false) {
                 search(n);
             }
         }

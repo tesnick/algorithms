@@ -1,3 +1,4 @@
+import nodes.GraphNode;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class DepthFirstSearchTest {
         adjacents.add(node2);
 
         GraphNode graphNode = new GraphNode(4);
-        graphNode.adjacent = adjacents;
+        graphNode.setAdjacent(adjacents);
 
         depthFirstSearch.search(graphNode);
     }

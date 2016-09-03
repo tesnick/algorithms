@@ -1,14 +1,16 @@
+import nodes.Node;
+
 /**
  * Created by tesnick on 31/08/16.
  */
 public class Stack {
 
-    Node top;
+    private Node top;
 
     Object pop() {
         if (top != null) {
-            Object item = top.data;
-            top = top.next;
+            Object item = top.getData();
+            top = top.getNext();
             return item;
         }
         return null;
@@ -16,11 +18,11 @@ public class Stack {
 
     void push(Object item) {
         Node t = new Node(item);
-        t.next = top;
+        t.setNext(top);
         top = t;
     }
 
     Object peek() {
-        return top.data;
+        return top.getData();
     }
 }

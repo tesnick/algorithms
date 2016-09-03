@@ -1,17 +1,31 @@
+package nodes;
+
 /**
  * The code below implements a very basic singly linked list.
  * Created by tesnick on 31/08/16.
  */
 public class Node {
 
-    Node next = null;
-    Object data;
+    private Node next = null;
+    private Object data;
 
     public Node(Object d) {
         data = d;
     }
 
-    void appendToTail(int d) {
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
+    public Object getData() {
+        return data;
+    }
+
+    public void appendToTail(int d) {
 
         Node end = new Node(d);
         Node n = this;
@@ -22,7 +36,7 @@ public class Node {
         n.next = end;
     }
 
-    Node deleteNode(Node head, int d) {
+    public Node deleteNode(Node head, int d) {
 
         Node n = head;
 

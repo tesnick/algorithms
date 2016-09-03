@@ -1,3 +1,5 @@
+import nodes.GraphNode;
+
 /**
  * Created by tesnick on 31/08/16.
  */
@@ -6,18 +8,18 @@ public class BreadthFirstSearch {
     void search(GraphNode root) {
 
         Queue queue = new Queue();
-        root.visited = true;
+        root.setVisited(true);
         visit(root);
         queue.enqueue(root); // Add to end of queue
 
         while (!queue.isEmpty()) {
 
             GraphNode r = (GraphNode) queue.dequeue();
-            for (GraphNode n : r.adjacent) {
+            for (GraphNode n : r.getAdjacent()) {
 
-                if (n.visited == false) {
+                if (n.isVisited() == false) {
                     visit(n);
-                    n.visited = true;
+                    n.setVisited(true);
                     queue.enqueue(n);
                 }
             }

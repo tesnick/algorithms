@@ -3,22 +3,22 @@
  */
 public class QuickSort {
 
-    private int array[];
+    private static int array[];
 
-    private int lenght;
+    private static int lenght;
 
-    public void sort(int[] inputArr) {
+    public static void sort(int[] inputArr) {
 
         if (inputArr == null || inputArr.length == 0) {
             return;
         }
 
-        this.array = inputArr;
+        array = inputArr;
         lenght = inputArr.length;
         quickSort(0, lenght - 1);
     }
 
-    private void quickSort(int lowerIndex, int higherIndex) {
+    private static void quickSort(int lowerIndex, int higherIndex) {
 
         int i = lowerIndex;
         int j = higherIndex;
@@ -51,7 +51,7 @@ public class QuickSort {
         }
     }
 
-    private void exChangeNumbers(int i, int j) {
+    private static void exChangeNumbers(int i, int j) {
         int tmp = array[i];
         array[i] = array[j];
         array[j] = tmp;
