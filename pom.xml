@@ -11,8 +11,9 @@
     <name>Algorithms</name>
 
     <modules>
-        <module>sorting</module>
         <module>data-structures</module>
+        <module>sorting</module>
+        <module>search</module>
     </modules>
 
     <build>
