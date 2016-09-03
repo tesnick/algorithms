@@ -21,8 +21,8 @@ public class GraphNode {
     @Override
     public String toString() {
         return "GraphNode{" +
-                "visited=" + visited +
-                ", adjacent=" + adjacent +
+               // "visited=" + visited +
+               // ", adjacent=" + adjacent +
                 ", data=" + data +
                 '}';
     }

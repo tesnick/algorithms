@@ -14,8 +14,11 @@ public class BreadthFirstSearchTest {
 
         BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
 
+        GraphNode child1 = new GraphNode(100);
+
         List<GraphNode> adjacents = new ArrayList<>();
         GraphNode node1 = new GraphNode(2);
+        node1.setAdjacent(new ArrayList<GraphNode>() {{ add(child1); }} );
         adjacents.add(node1);
         GraphNode node2 = new GraphNode(3);
         adjacents.add(node2);
