@@ -9,6 +9,16 @@ public class HeapSort {
     private static int right;
     private static int largest;
 
+    public static void sort(int []a0){
+        a=a0;
+        buildheap(a);
+
+        for(int i=n;i>0;i--){
+            exchange(0, i);
+            n=n-1;
+            maxheap(a, 0);
+        }
+    }
 
     public static void buildheap(int []a){
         n=a.length-1;
@@ -40,16 +50,5 @@ public class HeapSort {
         int t=a[i];
         a[i]=a[j];
         a[j]=t;
-    }
-
-    public static void sort(int []a0){
-        a=a0;
-        buildheap(a);
-
-        for(int i=n;i>0;i--){
-            exchange(0, i);
-            n=n-1;
-            maxheap(a, 0);
-        }
     }
 }
