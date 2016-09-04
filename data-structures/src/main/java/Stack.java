@@ -6,6 +6,14 @@ import nodes.Node;
  * that was not yet removed. The order in which elements come off a stack gives rise to its alternative name,
  * LIFO (for last in, first out)
  *
+ * Time Complexity:
+ *
+ *        Average
+ * Access Θ(n)
+ * Search Θ(n)
+ * Insert Θ(1)
+ * Delete Θ(1)
+ *
  * More info: https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
  *
  * Created by tesnick on 31/08/16.

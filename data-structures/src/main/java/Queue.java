@@ -9,6 +9,14 @@ import nodes.Node;
  * requirement that once a new element is added, all elements that were added before have to be removed before the new
  * element can be removed.
  *
+ * Time Complexity:
+ *
+ *        Average
+ * Access Θ(n)
+ * Search Θ(n)
+ * Insert Θ(1)
+ * Delete Θ(1)
+ *
  * More info: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
  *
  * Created by tesnick on 31/08/16.

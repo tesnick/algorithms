@@ -2,6 +2,17 @@ package nodes;
 
 /**
  * The code below implements a very basic singly linked list.
+ *
+ * Time Complexity:
+ *
+ *        Average
+ * Access Θ(n)
+ * Search Θ(n)
+ * Insert Θ(1)
+ * Delete Θ(1)
+ *
+ * More info: https://en.wikipedia.org/wiki/Linked_list
+ *
  * Created by tesnick on 31/08/16.
  */
 public class Node {
