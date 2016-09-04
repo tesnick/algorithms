@@ -1,6 +1,8 @@
 package nodes;
 
 /**
+ * Binary Search Tree (BST) node
+ *
  * Created by Javier on 03/09/2016.
  */
 public class BSTNode<T> {
@@ -11,5 +13,10 @@ public class BSTNode<T> {
 
     public BSTNode(int value){
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "BSTNode{value=" + value + '}';
     }
 }

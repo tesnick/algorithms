@@ -1,4 +1,16 @@
 /**
+ * Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic
+ * method for placing the elements of an array in order. Developed by Tony Hoare in 1959, with his work published
+ * in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about two or three
+ * times faster than its main competitors, merge sort and heapsort.
+ *
+ * Time Complexity:
+ *
+ *        Best case  Average    Worst case
+ *        Θ(n log n) Θ(n log n) Θ(n^2)
+ *
+ * More info: https://en.wikipedia.org/wiki/Quicksort
+ *
  * Created by tesnick on 2/09/16.
  */
 public class QuickSort {

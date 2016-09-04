@@ -1,4 +1,4 @@
-import nodes.BinarySearchTree;
+import nodes.BSTNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -91,5 +91,35 @@ public class BinarySearchTreeTest {
         target.insert(25);
 
         target.printPostorder();
+    }
+
+    @Test
+    public void notFound_searchTest() {
+
+        target = new BinarySearchTree();
+
+        target.insert(31);
+        target.insert(3);
+        target.insert(5);
+        target.insert(55);
+        target.insert(25);
+
+        BSTNode resultNode = target.search(1, target.root);
+        Assert.assertNull(resultNode);
+    }
+
+    @Test
+    public void found_searchTest() {
+
+        target = new BinarySearchTree();
+
+        target.insert(31);
+        target.insert(3);
+        target.insert(5);
+        target.insert(55);
+        target.insert(25);
+
+        BSTNode resultNode = target.search(55, target.root);
+        Assert.assertEquals(resultNode.value, 55);
     }
 }
